@@ -14,6 +14,7 @@ function get(src, path) {
 //     },
 //   },
 // };
+// console.log(get(obj, "a.b.c")); // 1
 
 const src = { nested: { key: "peekaboo" } };
 const path = "nested.key";
