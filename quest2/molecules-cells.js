@@ -44,20 +44,20 @@ console.log(RNA("GCTA")); // Outputs: 'CGAU'
 
 console.log(DNA("CGAU")); // Outputs: 'GCTA'
 
-function split(str, separator) {
-  var result = [];
-  var temp = "";
-  for (var i = 0; i < str.length; i++) {
-    if (str[i] === separator) {
-      result.push(temp);
-      temp = "";
-    } else {
-      temp += str[i];
-    }
-  }
-  result.push(temp);
-  return result;
-}
+// function split(str, separator) {
+//   var result = [];
+//   var temp = "";
+//   for (var i = 0; i < str.length; i++) {
+//     if (str[i] === separator) {
+//       result.push(temp);
+//       temp = "";
+//     } else {
+//       temp += str[i];
+//     }
+//   }
+//   result.push(temp);
+//   return result;
+// }
 
 // Open your browser's developer tools (usually by pressing F12 or right-clicking on the page and selecting "Inspect").
 // Navigate to the "Console" tab.
