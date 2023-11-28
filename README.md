@@ -51,8 +51,8 @@
 ### Quest 2 Loop
 
 - [repeat](https://github.com/01-edu/public/tree/master/subjects/repeat)
-- Create a function named repeat that takes a string and a number as arguments, and returns the string repeated as many times as the number describes. It should function like String.repeat(), but of course you must make your own.
-- `String.prototype.repeat = undefined`
+  - Create a function named repeat that takes a string and a number as arguments, and returns the string repeated as many times as the number describes. It should function like String.repeat(), but of course you must make your own.
+  - `String.prototype.repeat = undefined`
 
 - [elementary](https://github.com/01-edu/public/tree/master/subjects/elementary)
 
