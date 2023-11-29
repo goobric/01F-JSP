@@ -73,3 +73,52 @@ if (result !== null) {
 } else {
   console.log('Error');
 }
+
+// Helper functions
+function getWordPositions(lines) {
+  var wordPositions = [];
+  for (var i = 0; i < lines.length; i++) {
+    for (var j = 0; j < lines[i].length; j++) {
+      if (lines[i][j] === '1') {
+        wordPositions.push({ line: i, char: j, direction: 'horizontal' });
+      } else if (lines[i][j] === '2') {
+        wordPositions.push({ line: i, char: j, direction: 'vertical' });
+      }
+    }
+  }
+  wordPositions.sort((a, b) => a.line - b.line || a.char - b.char);
+  return wordPositions;
+}
+
+// Path: Raid1/decodeString.js
+// Compare this snippet from Raid1/encodeString.js:
+// function encodeString(s) {
+//   var result = '';
+//   var count = 1;
+//   for (var i = 1; i <= s.length; i++) {
+//     if (s[i] === s[i - 1]) {
+//       count++;
+//     } else {
+//       result += count + s[i - 1];
+//       count = 1;
+//     }
+//   }
+//   return result;
+// }
+//
+// function decodeString(s) {
+//   // Implement this function to decode a string.
+// }
+function decodeString(s) {
+  var result = '';
+  var count = '';
+  for (var i = 0; i < s.length; i++) {
+    if (isDigit(s[i])) {
+      count += s[i];
+    } else {
+      result += s[i].repeat(count || 1);
+      count = '';
+    }
+  }
+  return result;
+}
