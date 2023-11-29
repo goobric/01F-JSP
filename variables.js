@@ -24,3 +24,14 @@ age = 31;
 
 console.log(age);
 
+score = 1;
+console.log(score);
+if (true) {
+  score = score + 1;
+}
+console.log(score);
+const x = 100;
+const arr = [1, 2, 3, 4, 5];
+arr.push(6);
+console.log(arr);
+

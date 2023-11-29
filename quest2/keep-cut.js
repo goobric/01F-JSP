@@ -18,6 +18,10 @@ function cutLast(str) {
   return str.slice(0, -1);
 }
 
+function cutFirstLast(str) {
+  return str.slice(2, -2);
+}
+
 function keepFirstAndLast(str) {
   return str.slice(0, 1) + str.slice(-1);
 }
