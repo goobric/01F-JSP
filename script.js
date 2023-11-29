@@ -28,3 +28,5 @@ console.groupEnd();
 
 const styles =
   'padding: 10px; background: #222; color: #bada55; font-size: 20px;';
+
+console.log('%cHello World', styles);
