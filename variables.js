@@ -12,4 +12,13 @@
 // first-name = kebab-case
 // firstname = lowercase
 
+let firstName = 'John'; // String
+let lastName = 'Doe'; // String
+console.log(firstName, lastName);
+let age = 29; // Number
+
 // Re-assigning variables
+age = 31;
+
+console.log(age);
+
