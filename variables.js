@@ -12,6 +12,8 @@
 // first-name = kebab-case
 // firstname = lowercase
 
+// React components are PascalCase
+
 let firstName = 'John'; // String
 let lastName = 'Doe'; // String
 console.log(firstName, lastName);
